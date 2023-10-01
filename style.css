@@ -3,6 +3,9 @@
  padding: 0;
  margin: 0;
 }
+li{
+ list-style: none;
+}
 
 .wrapper h1 {
  font-size: 3rem;
