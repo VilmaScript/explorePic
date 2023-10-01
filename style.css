@@ -65,7 +65,7 @@ margin-left: .3em;
   object-fit:cover;
 }
 .error-message {
- color: #fff;
+ color: #4d4d4d;
  position: relative;
  z-index: 999;
  font-size: 3rem;
