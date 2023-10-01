@@ -46,16 +46,12 @@ const fetchImages = async () => {
    // Display the images if they are found
    setTimeout(() => {
     displayImages(images.results);
-    // Hide the loader when rendering is complete
-    loader.style.display = 'none';
    }, 4000);
   }
  } catch (error) {
   // Display an error message
   errorMessage.textContent = 'Error fetching images: ' + error.message;
   errorMessage.style.display = 'block';
-  loader.style.display = 'none';
-  console.error(error)
  } finally {
   // Hide the loader when done fetching
   loader.style.display = 'none';
