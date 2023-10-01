@@ -1,0 +1,118 @@
+* {
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+}
+
+.container{
+ background: url('./exploreImg/burcu-dnZ-XHfi_C0-unsplash.jpg');
+ width: 100%;
+ height: 100vh;
+ object-fit: contain;
+ background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+ color: #fff;
+ position: relative;
+ text-align: center;
+}
+.container::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0, 0, 0, 0.5); 
+
+}
+.wrapper h1 {
+ font-size: 3rem;
+}
+.wrapper p {
+ font-size: 1.4rem;
+ color: rgb(231, 231, 228);
+ padding-bottom: 1em;
+}
+.wrapper {
+ position: relative;
+ z-index: 999;
+padding-top: 3em;
+}
+.search-container{
+ position: relative;
+}
+input {
+ padding: .7rem;
+ border: none;
+ width: 60%;
+ font-size: 1rem;
+ outline: none;
+}
+.input-icon {
+ position: absolute;
+ right: 350px;
+ color: rgb(58, 57, 57);
+ top: 15px;
+}
+.intro-text {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.intro-icon {
+font-size: 2rem;
+margin-left: .3em;
+}
+.image-container {
+ position: relative;
+ z-index: 999;
+ display: grid;
+ grid-template-columns: repeat(4, 1fr); 
+ gap: 5px; 
+ padding: 3em;
+}
+.image-item img {
+ width: 350px;
+ height: 220px;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit:cover;
+}
+/* Style for the loader spinner */
+.loader {
+ border: 4px solid rgba(255, 255, 255, 0.3);
+ border-radius: 50%;
+ border-top: 4px solid #fff;
+ width: 40px;
+ height: 40px;
+ animation: spin 1s linear infinite;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ display: none; /* Initially hidden */
+}
+
+/* Keyframes for spinner animation */
+@keyframes spin {
+ 0% { transform: rotate(0deg); }
+ 100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+ .image-container {
+  display: grid;
+     grid-template-columns: repeat(2 , 1fr);
+ } 
+ .image-item img {
+ width: 160px;
+ height: 170px;
+ }
+ .input-icon {
+  right: 100px;
+ }
+
+ /* You can add more CSS rules specific to smaller screens here */
+}
