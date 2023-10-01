@@ -13,7 +13,7 @@ const unsplashApiUrl = `https://api.unsplash.com/search/photos?query=YOUR_SEARCH
 
 // Function to fetch images based on user input
 const fetchImages = async () => {
- // Clear the previous images
+ // Clear the previous images or error message
  imageContainer.innerHTML = '';
  errorMessage.style.display = 'none';
  const query = searchInput.value.trim();
